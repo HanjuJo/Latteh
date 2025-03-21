@@ -7,6 +7,7 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: [true, '이메일은 필수입니다'],
     unique: true,
+    trim: true,
     lowercase: true,
     validate: [validator.isEmail, '유효한 이메일 주소를 입력하세요']
   },

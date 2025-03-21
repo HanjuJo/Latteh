@@ -1,63 +1,52 @@
 const express = require('express');
-const { ApolloServer } = require('apollo-server-express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const path = require('path');
+const connectDB = require('./config/db');
 
-// 환경 변수 설정
+// 환경 변수 로드
 dotenv.config();
 
-// 앱 초기화
+// DB 연결
+connectDB();
+
 const app = express();
 
-// 미들웨어 설정
+// 미들웨어
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
-// 정적 파일 경로 설정
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-
-// MongoDB 연결
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/latteh', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-.then(() => console.log('MongoDB에 연결되었습니다'))
-.catch(err => console.error('MongoDB 연결 오류:', err));
-
-// GraphQL 스키마 및 리졸버 임포트 (추후 구현)
-// const typeDefs = require('./graphql/schema');
-// const resolvers = require('./graphql/resolvers');
-
-// REST API 라우트 설정
+// 라우터
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/users', require('./routes/users'));
 app.use('/api/questions', require('./routes/questions'));
-app.use('/api/answers', require('./routes/answers'));
-app.use('/api/experiences', require('./routes/experiences'));
-app.use('/api/ebooks', require('./routes/ebooks'));
-app.use('/api/points', require('./routes/points'));
-app.use('/api/notifications', require('./routes/notifications'));
 
-// Apollo Server 설정 (GraphQL)
-const startApolloServer = async () => {
-  // GraphQL 스키마 구현 후 주석 해제
-  // const server = new ApolloServer({
-  //   typeDefs,
-  //   resolvers,
-  //   context: ({ req }) => ({ req })
-  // });
-  // await server.start();
-  // server.applyMiddleware({ app });
-  
-  // 서버 시작
-  const PORT = process.env.PORT || 5000;
-  app.listen(PORT, () => {
-    console.log(`서버가 http://localhost:${PORT}에서 실행 중입니다`);
-    // console.log(`GraphQL 서버: http://localhost:${PORT}${server.graphqlPath}`);
+// 기본 라우트
+app.get('/', (req, res) => {
+  res.json({ message: 'Latteh API 서버에 오신 것을 환영합니다!' });
+});
+
+// 404 에러 핸들링
+app.use((req, res) => {
+  res.status(404).json({ message: '요청하신 페이지를 찾을 수 없습니다.' });
+});
+
+// 에러 핸들링 미들웨어
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ 
+    message: '서버 오류가 발생했습니다.',
+    error: process.env.NODE_ENV === 'development' ? err.message : undefined
   });
-};
+});
 
-startApolloServer(); 
+const PORT = process.env.PORT || 5000;
+
+const server = app.listen(PORT, () => {
+  console.log(`서버가 포트 ${PORT}에서 실행 중입니다.`);
+});
+
+// 정상적이지 않은 종료 처리
+process.on('unhandledRejection', (err) => {
+  console.error('처리되지 않은 Promise 거부:', err);
+  server.close(() => process.exit(1));
+}); 
