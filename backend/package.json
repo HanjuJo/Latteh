@@ -4,7 +4,7 @@
   "description": "Backend for Latteh experience sharing platform",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "gunicorn -c gunicorn_config.py server:app",
     "dev": "nodemon server.js",
     "test": "jest"
   },
