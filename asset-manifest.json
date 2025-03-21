@@ -1,0 +1,31 @@
+{
+  "files": {
+    "app.js": "/Latteh/static/js/app.4b2a6bb7.chunk.js",
+    "app.js.map": "/Latteh/static/js/app.4b2a6bb7.chunk.js.map",
+    "runtime~app.js": "/Latteh/static/js/runtime~app.aa1c4276.js",
+    "runtime~app.js.map": "/Latteh/static/js/runtime~app.aa1c4276.js.map",
+    "static/js/2.f57e83c0.chunk.js": "/Latteh/static/js/2.f57e83c0.chunk.js",
+    "static/js/2.f57e83c0.chunk.js.map": "/Latteh/static/js/2.f57e83c0.chunk.js.map",
+    "fonts/AntDesign.ttf": "/Latteh/./fonts/AntDesign.ttf",
+    "fonts/Entypo.ttf": "/Latteh/./fonts/Entypo.ttf",
+    "fonts/Feather.ttf": "/Latteh/./fonts/Feather.ttf",
+    "fonts/FontAwesome.ttf": "/Latteh/./fonts/FontAwesome.ttf",
+    "fonts/FontAwesome5_Brands.ttf": "/Latteh/./fonts/FontAwesome5_Brands.ttf",
+    "fonts/FontAwesome5_Solid.ttf": "/Latteh/./fonts/FontAwesome5_Solid.ttf",
+    "fonts/Fontisto.ttf": "/Latteh/./fonts/Fontisto.ttf",
+    "fonts/Foundation.ttf": "/Latteh/./fonts/Foundation.ttf",
+    "fonts/Ionicons.ttf": "/Latteh/./fonts/Ionicons.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/Latteh/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/MaterialIcons.ttf": "/Latteh/./fonts/MaterialIcons.ttf",
+    "fonts/SimpleLineIcons.ttf": "/Latteh/./fonts/SimpleLineIcons.ttf",
+    "index.html": "/Latteh/index.html",
+    "manifest.json": "/Latteh/manifest.json",
+    "serve.json": "/Latteh/serve.json",
+    "static/js/2.f57e83c0.chunk.js.LICENSE.txt": "/Latteh/static/js/2.f57e83c0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.aa1c4276.js",
+    "static/js/2.f57e83c0.chunk.js",
+    "static/js/app.4b2a6bb7.chunk.js"
+  ]
+}
