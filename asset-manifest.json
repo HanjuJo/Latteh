@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/Latteh/static/js/app.4b2a6bb7.chunk.js",
-    "app.js.map": "/Latteh/static/js/app.4b2a6bb7.chunk.js.map",
+    "app.js": "/Latteh/static/js/app.7b82fd0d.chunk.js",
+    "app.js.map": "/Latteh/static/js/app.7b82fd0d.chunk.js.map",
     "runtime~app.js": "/Latteh/static/js/runtime~app.aa1c4276.js",
     "runtime~app.js.map": "/Latteh/static/js/runtime~app.aa1c4276.js.map",
-    "static/js/2.f57e83c0.chunk.js": "/Latteh/static/js/2.f57e83c0.chunk.js",
-    "static/js/2.f57e83c0.chunk.js.map": "/Latteh/static/js/2.f57e83c0.chunk.js.map",
+    "static/js/2.c5f1647f.chunk.js": "/Latteh/static/js/2.c5f1647f.chunk.js",
+    "static/js/2.c5f1647f.chunk.js.map": "/Latteh/static/js/2.c5f1647f.chunk.js.map",
     "fonts/AntDesign.ttf": "/Latteh/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/Latteh/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/Latteh/./fonts/Feather.ttf",
@@ -21,11 +21,11 @@
     "index.html": "/Latteh/index.html",
     "manifest.json": "/Latteh/manifest.json",
     "serve.json": "/Latteh/serve.json",
-    "static/js/2.f57e83c0.chunk.js.LICENSE.txt": "/Latteh/static/js/2.f57e83c0.chunk.js.LICENSE.txt"
+    "static/js/2.c5f1647f.chunk.js.LICENSE.txt": "/Latteh/static/js/2.c5f1647f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.aa1c4276.js",
-    "static/js/2.f57e83c0.chunk.js",
-    "static/js/app.4b2a6bb7.chunk.js"
+    "static/js/2.c5f1647f.chunk.js",
+    "static/js/app.7b82fd0d.chunk.js"
   ]
 }
