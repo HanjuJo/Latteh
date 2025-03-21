@@ -11,8 +11,17 @@ connectDB();
 
 const app = express();
 
+// CORS 설정
+const corsOptions = {
+  origin: process.env.NODE_ENV === 'production' 
+    ? ['https://hanjujo.github.io', 'https://latteh.onrender.com']
+    : ['http://localhost:19006', 'http://localhost:3000'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 // 미들웨어
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
@@ -39,14 +48,19 @@ app.use((err, req, res, next) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 
-const server = app.listen(PORT, () => {
-  console.log(`서버가 포트 ${PORT}에서 실행 중입니다.`);
-});
+if (require.main === module) {
+  const server = app.listen(PORT, '0.0.0.0', () => {
+    console.log(`서버가 포트 ${PORT}에서 실행 중입니다.`);
+    console.log(`환경: ${process.env.NODE_ENV}`);
+  });
 
-// 정상적이지 않은 종료 처리
-process.on('unhandledRejection', (err) => {
-  console.error('처리되지 않은 Promise 거부:', err);
-  server.close(() => process.exit(1));
-}); 
+  // 정상적이지 않은 종료 처리
+  process.on('unhandledRejection', (err) => {
+    console.error('처리되지 않은 Promise 거부:', err);
+    server.close(() => process.exit(1));
+  });
+}
+
+module.exports = app; 
