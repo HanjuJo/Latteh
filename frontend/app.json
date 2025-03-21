@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "latteh-frontend",
+    "slug": "latteh-frontend",
+    "version": "0.1.0",
+    "sdkVersion": "45.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "bundleIdentifier": "y"
+    }
+  }
+}
