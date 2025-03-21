@@ -1,31 +1,17 @@
 {
   "files": {
-    "app.js": "/Latteh/static/js/app.7b82fd0d.chunk.js",
-    "app.js.map": "/Latteh/static/js/app.7b82fd0d.chunk.js.map",
-    "runtime~app.js": "/Latteh/static/js/runtime~app.aa1c4276.js",
-    "runtime~app.js.map": "/Latteh/static/js/runtime~app.aa1c4276.js.map",
-    "static/js/2.c5f1647f.chunk.js": "/Latteh/static/js/2.c5f1647f.chunk.js",
-    "static/js/2.c5f1647f.chunk.js.map": "/Latteh/static/js/2.c5f1647f.chunk.js.map",
-    "fonts/AntDesign.ttf": "/Latteh/./fonts/AntDesign.ttf",
-    "fonts/Entypo.ttf": "/Latteh/./fonts/Entypo.ttf",
-    "fonts/Feather.ttf": "/Latteh/./fonts/Feather.ttf",
-    "fonts/FontAwesome.ttf": "/Latteh/./fonts/FontAwesome.ttf",
-    "fonts/FontAwesome5_Brands.ttf": "/Latteh/./fonts/FontAwesome5_Brands.ttf",
-    "fonts/FontAwesome5_Solid.ttf": "/Latteh/./fonts/FontAwesome5_Solid.ttf",
-    "fonts/Fontisto.ttf": "/Latteh/./fonts/Fontisto.ttf",
-    "fonts/Foundation.ttf": "/Latteh/./fonts/Foundation.ttf",
-    "fonts/Ionicons.ttf": "/Latteh/./fonts/Ionicons.ttf",
-    "fonts/MaterialCommunityIcons.ttf": "/Latteh/./fonts/MaterialCommunityIcons.ttf",
-    "fonts/MaterialIcons.ttf": "/Latteh/./fonts/MaterialIcons.ttf",
-    "fonts/SimpleLineIcons.ttf": "/Latteh/./fonts/SimpleLineIcons.ttf",
+    "main.js": "/Latteh/static/js/main.afb3f6a3.js",
+    "static/js/7.8bf4c961.js": "/Latteh/static/js/7.8bf4c961.js",
+    "static/media/MaterialCommunityIcons.ttf": "/Latteh/static/media/MaterialCommunityIcons.5d42b4e60858731e7b65.ttf",
+    "static/media/Ionicons.ttf": "/Latteh/static/media/Ionicons.3517aeaa34b2f8cd8eef.ttf",
     "index.html": "/Latteh/index.html",
     "manifest.json": "/Latteh/manifest.json",
     "serve.json": "/Latteh/serve.json",
-    "static/js/2.c5f1647f.chunk.js.LICENSE.txt": "/Latteh/static/js/2.c5f1647f.chunk.js.LICENSE.txt"
+    "main.afb3f6a3.js.map": "/Latteh/static/js/main.afb3f6a3.js.map",
+    "7.8bf4c961.js.map": "/Latteh/static/js/7.8bf4c961.js.map"
   },
   "entrypoints": [
-    "static/js/runtime~app.aa1c4276.js",
-    "static/js/2.c5f1647f.chunk.js",
-    "static/js/app.7b82fd0d.chunk.js"
+    "static/js/7.8bf4c961.js",
+    "static/js/main.afb3f6a3.js"
   ]
 }
