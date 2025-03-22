@@ -1,17 +1,10 @@
 {
   "files": {
-    "main.js": "/Latteh/static/js/main.afb3f6a3.js",
-    "static/js/7.8bf4c961.js": "/Latteh/static/js/7.8bf4c961.js",
-    "static/media/MaterialCommunityIcons.ttf": "/Latteh/static/media/MaterialCommunityIcons.5d42b4e60858731e7b65.ttf",
-    "static/media/Ionicons.ttf": "/Latteh/static/media/Ionicons.3517aeaa34b2f8cd8eef.ttf",
+    "main.js": "/Latteh/static/js/main.b0b366ec.js",
     "index.html": "/Latteh/index.html",
-    "manifest.json": "/Latteh/manifest.json",
-    "serve.json": "/Latteh/serve.json",
-    "main.afb3f6a3.js.map": "/Latteh/static/js/main.afb3f6a3.js.map",
-    "7.8bf4c961.js.map": "/Latteh/static/js/7.8bf4c961.js.map"
+    "main.b0b366ec.js.map": "/Latteh/static/js/main.b0b366ec.js.map"
   },
   "entrypoints": [
-    "static/js/7.8bf4c961.js",
-    "static/js/main.afb3f6a3.js"
+    "static/js/main.b0b366ec.js"
   ]
 }
